@@ -16,6 +16,7 @@ RSpec.describe Item, type: :model do
 
       it 'name is valid' do
         item = Item.create(name: 'iPhone')
+        sleep 360
         expect(item.name).to eq "iPhone"
       end
     end
